@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TimerViewController.swift
 //  SwiftProject
 //
 //  Created by LTHJ on 2017/1/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TimerViewController: UIViewController {
 
     lazy var playBtn : UIButton = {
         var playBtn = UIButton.init(type: UIButtonType.custom)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     var counter = 0.0
     var timer = Timer()
     var isPlaying = false
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -89,9 +89,9 @@ class ViewController: UIViewController {
         }
         
         timeLabel.text = String(counter)
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -129,5 +129,5 @@ class ViewController: UIViewController {
         timeLabel.text = String(format:"%.1f", counter)
     }
 
-}
 
+}

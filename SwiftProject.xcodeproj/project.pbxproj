@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0825ACDA1E25C968001E6E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825ACD91E25C968001E6E4D /* AppDelegate.swift */; };
-		0825ACDC1E25C968001E6E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825ACDB1E25C968001E6E4D /* ViewController.swift */; };
 		0825ACDF1E25C968001E6E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825ACDD1E25C968001E6E4D /* Main.storyboard */; };
 		0825ACE11E25C968001E6E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825ACE01E25C968001E6E4D /* Assets.xcassets */; };
 		0825ACE41E25C968001E6E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825ACE21E25C968001E6E4D /* LaunchScreen.storyboard */; };
@@ -47,6 +46,7 @@
 		0825AD8B1E260546001E6E4D /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD6B1E260546001E6E4D /* LayoutConstraint.swift */; };
 		0825AD8C1E260546001E6E4D /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD6C1E260546001E6E4D /* LayoutConstraintItem.swift */; };
 		0825AD8D1E260546001E6E4D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD6D1E260546001E6E4D /* UILayoutSupport+Extensions.swift */; };
+		0825AD8F1E261B22001E6E4D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD8E1E261B22001E6E4D /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 /* Begin PBXFileReference section */
 		0825ACD61E25C968001E6E4D /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825ACD91E25C968001E6E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0825ACDB1E25C968001E6E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0825ACDE1E25C968001E6E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0825ACE01E25C968001E6E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0825ACE31E25C968001E6E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		0825AD6B1E260546001E6E4D /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = SnapKit/Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		0825AD6C1E260546001E6E4D /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = SnapKit/Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		0825AD6D1E260546001E6E4D /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "SnapKit/Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		0825AD8E1E261B22001E6E4D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 			children = (
 				0825ACD91E25C968001E6E4D /* AppDelegate.swift */,
 				0825AD4A1E25FAF1001E6E4D /* MainViewController.swift */,
-				0825ACDB1E25C968001E6E4D /* ViewController.swift */,
+				0825AD8E1E261B22001E6E4D /* TimerViewController.swift */,
 				0825ACDD1E25C968001E6E4D /* Main.storyboard */,
 				0825ACE01E25C968001E6E4D /* Assets.xcassets */,
 				0825ACE21E25C968001E6E4D /* LaunchScreen.storyboard */,
@@ -400,7 +400,6 @@
 				0825AD731E260546001E6E4D /* ConstraintDSL.swift in Sources */,
 				0825AD871E260546001E6E4D /* ConstraintView.swift in Sources */,
 				0825AD861E260546001E6E4D /* ConstraintRelation.swift in Sources */,
-				0825ACDC1E25C968001E6E4D /* ViewController.swift in Sources */,
 				0825AD8D1E260546001E6E4D /* UILayoutSupport+Extensions.swift in Sources */,
 				0825AD711E260546001E6E4D /* ConstraintConstantTarget.swift in Sources */,
 				0825AD841E260546001E6E4D /* ConstraintPriorityTarget.swift in Sources */,
@@ -414,6 +413,7 @@
 				0825AD771E260546001E6E4D /* ConstraintLayoutGuide.swift in Sources */,
 				0825AD8C1E260546001E6E4D /* LayoutConstraintItem.swift in Sources */,
 				0825AD7C1E260546001E6E4D /* ConstraintMaker.swift in Sources */,
+				0825AD8F1E261B22001E6E4D /* TimerViewController.swift in Sources */,
 				0825ACDA1E25C968001E6E4D /* AppDelegate.swift in Sources */,
 				0825AD751E260546001E6E4D /* ConstraintInsetTarget.swift in Sources */,
 				0825AD741E260546001E6E4D /* ConstraintInsets.swift in Sources */,

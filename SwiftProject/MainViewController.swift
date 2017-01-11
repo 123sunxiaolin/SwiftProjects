@@ -24,6 +24,7 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
         tableView.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
         return tableView
     }()
     
@@ -50,28 +51,38 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
     
     //MARK:UITableViewDelegate
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return data.count
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40.0
     }
-    //TODO:还没写完
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifer = "Cell"
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifer)
         }
-        cell?.textLabel?.text = String(format:"测试%ld", indexPath.row)
+        let currentTableData = data[indexPath.row]
+        
+        cell?.textLabel?.text = currentTableData.funcName
         cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("section:\(indexPath.section)" + "\n row: \(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let timerVc = TimerViewController()
+        self.navigationController?.pushViewController(timerVc, animated: true)
+        
+        
     }
 
 }
