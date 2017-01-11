@@ -1,2 +1,2 @@
-# SwiftProjects
+# SwiftProject
 A project in Swift
