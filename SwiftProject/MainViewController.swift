@@ -15,7 +15,8 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
     }
     
     let data = [
-        tableData(funcName: "定时器")
+        tableData(funcName: "定时器"),
+        tableData(funcName: "下拉刷新")
     ]
     
     
@@ -79,8 +80,18 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
         print("section:\(indexPath.section)" + "\n row: \(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let timerVc = TimerViewController()
-        self.navigationController?.pushViewController(timerVc, animated: true)
+        
+        switch indexPath.row {
+        case 0:
+            let timerVc = TimerViewController()
+            self.navigationController?.pushViewController(timerVc, animated: true)
+        case 1:
+            let pulldownVC = PullDownViewController()
+            self.navigationController?.pushViewController(pulldownVC, animated: true)
+            
+        default:
+            return
+        }
         
         
     }
