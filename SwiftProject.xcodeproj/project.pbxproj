@@ -48,6 +48,13 @@
 		0825AD8D1E260546001E6E4D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD6D1E260546001E6E4D /* UILayoutSupport+Extensions.swift */; };
 		0825AD8F1E261B22001E6E4D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD8E1E261B22001E6E4D /* TimerViewController.swift */; };
 		0825AD911E262388001E6E4D /* PullDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825AD901E262388001E6E4D /* PullDownViewController.swift */; };
+		08EF64831E2DFDB600818C85 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF647C1E2DFDB600818C85 /* Constant.swift */; };
+		08EF64841E2DFDB600818C85 /* NetworkBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF647D1E2DFDB600818C85 /* NetworkBean.swift */; };
+		08EF64851E2DFDB600818C85 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF647E1E2DFDB600818C85 /* NetworkClient.swift */; };
+		08EF64861E2DFDB600818C85 /* RequestBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF647F1E2DFDB600818C85 /* RequestBean.swift */; };
+		08EF64871E2DFDB600818C85 /* RequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF64801E2DFDB600818C85 /* RequestDelegate.swift */; };
+		08EF64881E2DFDB600818C85 /* RequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF64811E2DFDB600818C85 /* RequestWrapper.swift */; };
+		08EF64891E2DFDB600818C85 /* ResponseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EF64821E2DFDB600818C85 /* ResponseBean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +122,13 @@
 		0825AD6D1E260546001E6E4D /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "SnapKit/Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		0825AD8E1E261B22001E6E4D /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		0825AD901E262388001E6E4D /* PullDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullDownViewController.swift; sourceTree = "<group>"; };
+		08EF647C1E2DFDB600818C85 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = SwiftProject/networkWrapper/Constant.swift; sourceTree = "<group>"; };
+		08EF647D1E2DFDB600818C85 /* NetworkBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkBean.swift; path = SwiftProject/networkWrapper/NetworkBean.swift; sourceTree = "<group>"; };
+		08EF647E1E2DFDB600818C85 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkClient.swift; path = SwiftProject/networkWrapper/NetworkClient.swift; sourceTree = "<group>"; };
+		08EF647F1E2DFDB600818C85 /* RequestBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestBean.swift; path = SwiftProject/networkWrapper/RequestBean.swift; sourceTree = "<group>"; };
+		08EF64801E2DFDB600818C85 /* RequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestDelegate.swift; path = SwiftProject/networkWrapper/RequestDelegate.swift; sourceTree = "<group>"; };
+		08EF64811E2DFDB600818C85 /* RequestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestWrapper.swift; path = SwiftProject/networkWrapper/RequestWrapper.swift; sourceTree = "<group>"; };
+		08EF64821E2DFDB600818C85 /* ResponseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseBean.swift; path = SwiftProject/networkWrapper/ResponseBean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,7 @@
 		0825ACCD1E25C968001E6E4D = {
 			isa = PBXGroup;
 			children = (
+				08EF647B1E2DFDA200818C85 /* Network */,
 				0825AD091E25CED8001E6E4D /* SnapKit */,
 				0825ACD81E25C968001E6E4D /* SwiftProject */,
 				0825ACED1E25C968001E6E4D /* SwiftProjectTests */,
@@ -233,6 +248,20 @@
 				0825AD6D1E260546001E6E4D /* UILayoutSupport+Extensions.swift */,
 			);
 			name = SnapKit;
+			sourceTree = "<group>";
+		};
+		08EF647B1E2DFDA200818C85 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				08EF647C1E2DFDB600818C85 /* Constant.swift */,
+				08EF647D1E2DFDB600818C85 /* NetworkBean.swift */,
+				08EF647E1E2DFDB600818C85 /* NetworkClient.swift */,
+				08EF647F1E2DFDB600818C85 /* RequestBean.swift */,
+				08EF64801E2DFDB600818C85 /* RequestDelegate.swift */,
+				08EF64811E2DFDB600818C85 /* RequestWrapper.swift */,
+				08EF64821E2DFDB600818C85 /* ResponseBean.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,18 +423,23 @@
 				0825AD4B1E25FAF1001E6E4D /* MainViewController.swift in Sources */,
 				0825AD7E1E260546001E6E4D /* ConstraintMakerExtendable.swift in Sources */,
 				0825AD891E260546001E6E4D /* ConstraintViewDSL.swift in Sources */,
+				08EF64831E2DFDB600818C85 /* Constant.swift in Sources */,
 				0825AD801E260546001E6E4D /* ConstraintMakerPriortizable.swift in Sources */,
+				08EF64891E2DFDB600818C85 /* ResponseBean.swift in Sources */,
 				0825AD881E260546001E6E4D /* ConstraintView+Extensions.swift in Sources */,
+				08EF64851E2DFDB600818C85 /* NetworkClient.swift in Sources */,
 				0825AD911E262388001E6E4D /* PullDownViewController.swift in Sources */,
 				0825AD831E260546001E6E4D /* ConstraintOffsetTarget.swift in Sources */,
 				0825AD811E260546001E6E4D /* ConstraintMakerRelatable.swift in Sources */,
 				0825AD851E260546001E6E4D /* ConstraintRelatableTarget.swift in Sources */,
+				08EF64871E2DFDB600818C85 /* RequestDelegate.swift in Sources */,
 				0825AD7F1E260546001E6E4D /* ConstraintMakerFinalizable.swift in Sources */,
 				0825AD731E260546001E6E4D /* ConstraintDSL.swift in Sources */,
 				0825AD871E260546001E6E4D /* ConstraintView.swift in Sources */,
 				0825AD861E260546001E6E4D /* ConstraintRelation.swift in Sources */,
 				0825AD8D1E260546001E6E4D /* UILayoutSupport+Extensions.swift in Sources */,
 				0825AD711E260546001E6E4D /* ConstraintConstantTarget.swift in Sources */,
+				08EF64841E2DFDB600818C85 /* NetworkBean.swift in Sources */,
 				0825AD841E260546001E6E4D /* ConstraintPriorityTarget.swift in Sources */,
 				0825AD791E260546001E6E4D /* ConstraintLayoutGuideDSL.swift in Sources */,
 				0825AD6F1E260546001E6E4D /* ConstraintAttributes.swift in Sources */,
@@ -413,8 +447,10 @@
 				0825AD701E260546001E6E4D /* ConstraintConfig.swift in Sources */,
 				0825AD7A1E260546001E6E4D /* ConstraintLayoutSupport.swift in Sources */,
 				0825AD8A1E260546001E6E4D /* Debugging.swift in Sources */,
+				08EF64861E2DFDB600818C85 /* RequestBean.swift in Sources */,
 				0825AD8B1E260546001E6E4D /* LayoutConstraint.swift in Sources */,
 				0825AD771E260546001E6E4D /* ConstraintLayoutGuide.swift in Sources */,
+				08EF64881E2DFDB600818C85 /* RequestWrapper.swift in Sources */,
 				0825AD8C1E260546001E6E4D /* LayoutConstraintItem.swift in Sources */,
 				0825AD7C1E260546001E6E4D /* ConstraintMaker.swift in Sources */,
 				0825AD8F1E261B22001E6E4D /* TimerViewController.swift in Sources */,
