@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081FDD4D1E30DB9E00524F9D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081FDD4C1E30DB9E00524F9D /* UIColor.swift */; };
 		0825ACDA1E25C968001E6E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0825ACD91E25C968001E6E4D /* AppDelegate.swift */; };
 		0825ACDF1E25C968001E6E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0825ACDD1E25C968001E6E4D /* Main.storyboard */; };
 		0825ACE11E25C968001E6E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0825ACE01E25C968001E6E4D /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081FDD4C1E30DB9E00524F9D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0825ACD61E25C968001E6E4D /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0825ACD91E25C968001E6E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0825ACDE1E25C968001E6E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		0825ACD81E25C968001E6E4D /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				081FDD4C1E30DB9E00524F9D /* UIColor.swift */,
 				0825ACD91E25C968001E6E4D /* AppDelegate.swift */,
 				0825AD4A1E25FAF1001E6E4D /* MainViewController.swift */,
 				0825AD8E1E261B22001E6E4D /* TimerViewController.swift */,
@@ -447,6 +450,7 @@
 				0825AD701E260546001E6E4D /* ConstraintConfig.swift in Sources */,
 				0825AD7A1E260546001E6E4D /* ConstraintLayoutSupport.swift in Sources */,
 				0825AD8A1E260546001E6E4D /* Debugging.swift in Sources */,
+				081FDD4D1E30DB9E00524F9D /* UIColor.swift in Sources */,
 				08EF64861E2DFDB600818C85 /* RequestBean.swift in Sources */,
 				0825AD8B1E260546001E6E4D /* LayoutConstraint.swift in Sources */,
 				0825AD771E260546001E6E4D /* ConstraintLayoutGuide.swift in Sources */,
